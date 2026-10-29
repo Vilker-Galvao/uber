@@ -1,0 +1,192 @@
+/* Tela 02 - usa a base do style.css */
+
+.app-corrida {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 0;
+}
+
+/* MAPA */
+.mapa {
+    position: relative;
+    height: 250px;
+    background-image: url(imagens/mapa.png);
+    overflow: hidden;
+}
+
+.voltar {
+    position: absolute;
+    top: 24px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    background: #fff;
+    border-radius: 50%;
+    font-size: 24px;
+    font-weight: bold;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.tempo {
+    position: absolute;
+    top: 70px;
+    left: 108px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #000;
+    color: #fff;
+    padding: 4px 8px;
+}
+
+.tempo strong {
+    font-size: 15px;
+}
+.tempo small {
+    font-size: 9px;
+}
+
+.tag {
+    position: absolute;
+    background: #fff;
+    font-size: 13px;
+    padding: 10px 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.tag-origem {
+    top: 66px;
+    left: 148px;
+}
+
+.tag-destino {
+    top: 170px;
+    right: 12px;
+}
+
+.ponto-azul {
+    background: #3b5bff;
+    position: absolute;
+    top: 150px;
+    left: 163px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+}
+
+
+/* PAINEL */
+.painel {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+}
+
+.alca {
+    width: 40px;
+    height: 4px;
+    background: #ccc;
+    border-radius: 2px;
+    margin: 8px auto 12px;
+}
+
+.aviso {
+    text-align: center;
+    font-size: 13px;
+    color: #555;
+    padding-bottom: 14px;
+}
+
+
+/* OPÇÕES DE CORRIDA */
+.opcoes {
+    list-style: none;
+}
+
+.opcao {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 22px 20px;
+    cursor: pointer;
+}
+
+.opcao-ativa {
+    background: #eeeeee;
+}
+
+.opcao-img {
+    width: 56px;
+    font-size: 40px;
+    text-align: center;
+}
+
+.opcao-info {
+    flex: 1;
+}
+
+.opcao-linha {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.opcao-linha h3 {
+    font-size: 16px;
+}
+
+.opcao-ativa h3 {
+    font-size: 18px;
+}
+
+.opcao-linha h3 small {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.opcao-info p {
+    margin-top: 4px;
+    font-size: 13px;
+    color: #444;
+}
+
+.opcao-info .economia {
+    color: #3b5bff;
+    font-weight: bold;
+}
+
+
+/* PAGAMENTO */
+.pagamento {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: auto;
+    padding: 18px 20px;
+    border-top: 1px solid #e5e5e5;
+    font-size: 15px;
+}
+
+.pagamento-icone {
+    font-size: 22px;
+}
+
+/* BOTAO */
+.rodape {
+    padding: 0 20px 40px;
+}
+
+.botao-confirmar {
+    display: block;
+    background: #000;
+    color: #fff;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 18px 0;
+    border-radius: 4px;
+}

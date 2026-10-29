@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uber - Escolher corrida</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="corrida.css">
+</head>
+<body>
+    <div class="app app-corrida">
+
+        <!-- MAPA -->
+         <section class="mapa">
+            <a href="index.html" class="voltar" aria-label="Voltar">←</a>
+
+            <div class="tempo"><strong>12</strong><small>MIN</small></div>
+            <span class="tag tag-origem">Cariri Shopping, Juazeiro do Norte</span>
+            <span class="tag tag-destino">Centro, Crato</span>
+            <span class="ponto-azul"></span>
+         </section>
+
+         <!-- PAINEL DE BAIXO -->
+         <section class="painel">
+            <div class="alca"></div>
+            <p class="aviso">As tarifas estão um pouco mais altas devido ao aumento de demanda</p>
+
+            <ul class="opcoes">
+
+                <li class="opcao opcao-ativa" data-nome="UberX">
+                    <span class="opcao-img">🚗</span>
+                    <div class="opcao-info">
+                        <div class="opcao-linha">
+                            <h3>UberX <small>👤 4</small></h3>
+                            <span class="preco">R$ 22,63</span>
+                        </div>
+                        <p>10:24 · 12 minutos de distância</p>
+                    </div>
+                </li>
+
+                <li class="opcao" data-nome="Uber Confort">
+                    <span class="opcao-img">🚙</span>
+                    <div class="opcao-info">
+                        <div class="opcao-linha">
+                            <h3>Uber Confort</h3>
+                            <span class="preco">R$18,98</span>
+                        </div>
+                        <p>10:24 · 12 minutos de distância</p>
+                        <p class="economia">Economia de ~30%</p>
+                    </div>
+                </li>
+
+                <li class="opcao" data-nome="Uber Moto">
+                    <span class="opcao-img">🏍️</span>
+                    <div class="opcao-info">
+                        <div class="opcao-linha">
+                            <h3>Uber Moto</h3>
+                            <span class="preco">R$ 13,48</span>
+                        </div>
+                        <p>10:18 - 10:20 · 8 minutos de distância</p>
+                        <p class="economia">Economia de ~50%</p>
+                    </div>
+                </li>
+            </ul>
+
+            <div class="pagamento">
+                <span class="pagamento-icone">💵</span>
+                <span>Dinheiro</span>
+            </div>
+
+            <div class="rodape"> 
+                <a href="#" class="botao-confirmar" id="botao-confirmar">Confirmar UberX</a>
+            </div>
+         </section>
+
+    </div>
+
+    <script src="corrida.js"></script>
+
+    
+</body>
+</html>
