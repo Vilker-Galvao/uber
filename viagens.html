@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uber - Minhas viagens</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="viagens.css">
+</head>
+<body>
+    <div class="app app-viagens">
+
+        <header class="cabecalho">
+            <a href="index.html" class="voltar-simples" aria-label="Voltar">←</a>
+            <h1>Minhas viagens</h1>
+        </header>
+
+        <!-- ABAS -->
+         <nav class="filtros">
+            <button class="filtro filtro-ativo" data-tipo="todas">Todas</button>
+            <button class="filtro" data-tipo="pessoal">Pessoais</button>
+            <button class="filtro" data-tipo="trabalho">Trabalho</button>
+         </nav>
+
+        <!-- FEV 2026 -->
+         <section class="mes">
+            <h2>Fev 2026</h2>
+            <ul class="viagens">
+                <li class="viagem" data-tipo="pessoal">
+                    <span class="viagem-icone">🚘</span>
+                    <div class="viagem-info">
+                        <strong>Aeroporto de Juazeiro do Norte</strong>
+                        <small>4 fev, 17:19</small>
+                    </div>
+                    <div class="viagem-valor">
+                        <strong>R$ oo,oo</strong>
+                        <small>Viagem cancelada</small>
+                    </div>
+                </li>
+            </ul>
+         </section>
+
+         <!-- JUNHO DE 2026 -->
+         <section class="mes">
+            <h2>Jun 2026</h2>
+            <ul class="viagens">
+                <li class="viagem" data-tipo="trabalho">
+                    <span class="viagem-icone">🚘</span>
+                    <div class="viagem-info">
+                        <strong>Magazine Luiza - loja 05</strong>
+                        <small>10 jun, 07:30</small>
+                    </div>
+                    <div class="viagem-valor">
+                        <strong>R$ 23,99</strong>
+                    </div>
+                </li>
+
+                <li class="viagem" data-tipo="pessoal">
+                    <span class="viagem-icone">🚘</span>
+                    <div class="viagem-info">
+                        <strong>Cariri Shopping, Triângulo</strong>
+                        <small>10 jun, 19:48</small>
+                    </div>
+                    <div class="viagem-valor">
+                        <strong>R$ 18,54</strong>
+                    </div>
+                </li>
+            </ul>
+         </section>
+
+         <!-- SETEMBRO 2026 -->
+          <section class="mes">
+            <h2>Set 2026</h2>
+            <ul class="viagens">
+                <li class="viagem" data-tipo="trabalho">
+                    <span class="viagem-icone">🚘</span>
+                    <div class="viagem-info">
+                        <strong>Magazine Luiza - loja 05</strong>
+                        <small>18 set, 07:30</small>
+                    </div>
+                    <div class="viagem-valor">
+                        <strong>R$ 23,52</strong>
+                    </div>
+                </li>
+
+                <li class="viagem" data-tipo="pessoal">
+                    <span class="viagem-icone">🚘</span>
+                    <div class="viagem-info">
+                        <strong>Supermercado São Luis, Lagoa Seca</strong>
+                        <small>20 set, 09:18</small>
+                    </div>
+                    <div class="viagem-valor">
+                        <strong>R$ 18,54</strong>
+                    </div>
+                </li>
+
+                <li class="viagem" data-tipo="pessoal">
+                    <span class="viagem-icone">🚘</span>
+                    <div class="viagem-info">
+                        <strong>Dablio Open Mall, Lagoa Seca</strong>
+                        <small>29 set, 20:14</small>
+                    </div>
+                    <div class="viagem-valor">
+                        <strong>R$ 21,86</strong>
+                    </div>
+                </li>
+            </ul>
+         </section>
+    </div>
+
+    <script src="viagens.js"></script>
+    
+</body>
+</html>

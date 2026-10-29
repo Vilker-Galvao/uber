@@ -1,0 +1,115 @@
+ /* Tela 07 - usa a base do style.css */
+ .app viagens {
+    padding-bottom: 40px;
+ }
+
+ /* CABEÇALHO */
+ .cabecalho {
+    padding: 36px 24px 20px;
+ }
+
+ .voltar-simples {
+    display: inline-block;
+    font-size: 30px;
+    line-height: 1;
+    margin-bottom: 24px;
+ }
+
+ .cabecalho h1 {
+    font-size: 24px;
+ }
+
+ /* ABAS  */
+ .filtros {
+    display: flex;
+    border-bottom: 1px solid #e5e5e5;
+ }
+
+ .filtro {
+    flex: 1;
+    background: none;
+    border: none;
+    border-bottom: 2px solid transparent;
+    padding: 14px 0;
+    font-size: 15px;
+    font-weight: bold;
+    color: #6b6b6b;
+    cursor: pointer;
+ }
+
+ .filtro-ativo {
+    color: #000;
+    border-bottom: #1fb26b;
+ }
+
+ /* MESES */
+.mes {
+    padding: 0 24px;
+}
+
+.mes h2 {
+    font-size: 15px;
+    margin: 28px 0 8px;
+}
+
+.viagens {
+    list-style: none;
+}
+
+/* VIAGEM */
+.viagem {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 14px 0;
+}
+
+.viagem-icone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 38px;
+    height: 38px;
+    background: #f3f3f3;
+    border-radius: 50%;
+    font-size: 18px;
+}
+
+.viagem-info {
+    flex: 1;
+    min-width: 0; /* permite cortar o texto com ... */
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.viagem-info strong {
+    font-weight: normal;
+    font-size: 15px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 150px;
+}
+
+.viagem-info small {
+    font-size: 12px;
+    color: #6b6b6b;
+}
+
+.viagem-valor {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 6px;
+}
+
+.viagem-valor strong {
+    font-size: 15px;
+}
+
+.viagem-valor small {
+    font-size: 11px;
+    color: #6b6b6b;
+}
