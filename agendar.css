@@ -1,0 +1,52 @@
+/* Tela 06 - Agendar viagem (usa a base do style.css) */
+
+.botao-preto {
+  display: block;
+  background: #000;
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 18px 0;
+  border-radius: 2px;
+}
+
+.rodape {
+  padding: 16px 20px 24px;
+}
+
+.app-agendar {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 0;
+}
+
+.escurecer {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.agendar-janela {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #fff;
+  z-index: 2;
+}
+
+.agendar-janela h2 {
+  text-align: center;
+  font-size: 24px;
+  font-weight: normal;
+  padding: 24px 0;
+}
+
+.agendar-linha {
+  text-align: center;
+  font-size: 16px;
+  padding: 22px 0;
+  border-top: 1px solid #ececec;
+}

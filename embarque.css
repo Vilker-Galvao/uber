@@ -1,0 +1,141 @@
+/* Tela 05 - Local de embarque (usa a base do style.css) */
+
+.voltar {
+  position: absolute;
+  top: 24px;
+  left: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background: #fff;
+  border-radius: 50%;
+  font-size: 24px;
+  font-weight: bold;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+}
+
+.botao-preto {
+  display: block;
+  background: #000;
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 18px 0;
+  border-radius: 2px;
+}
+
+.rodape {
+  padding: 16px 20px 24px;
+}
+
+.app-embarque {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 0;
+}
+
+.mapa-embarque {
+  position: relative;
+  height: 350px;
+  background-image: url(imagens/mapa.png);
+  overflow: hidden;
+}
+
+.zona {
+  position: absolute;
+  top: 70px;
+  left: 50px;
+  width: 280px;
+  height: 230px;
+  background: rgba(70, 90, 255, 0.25);
+  border: 2px solid #3b5bff;
+  clip-path: polygon(10% 5%, 75% 5%, 98% 60%, 55% 98%, 5% 70%);
+}
+
+.zona-balao {
+  position: absolute;
+  top: 100px;
+  left: 85px;
+  width: 215px;
+  background: #4a5cf0;
+  color: #fff;
+  font-size: 13px;
+  padding: 10px 14px;
+  border-radius: 20px;
+}
+
+.zona-haste {
+  position: absolute;
+  top: 152px;
+  left: 235px;
+  width: 1px;
+  height: 40px;
+  background: #000;
+}
+
+.zona-ponto {
+  position: absolute;
+  top: 190px;
+  left: 230px;
+  width: 12px;
+  height: 12px;
+  background: #3b5bff;
+  border: 2px solid #fff;
+}
+
+.embarque-painel {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+}
+
+.embarque-titulo {
+  text-align: center;
+  font-size: 14px;
+  font-weight: normal;
+  padding: 22px 0;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.embarque-busca {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 16px;
+  font-size: 13px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.embarque-busca button {
+  background: #eee;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 16px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.embarque-zona {
+  background: #f3f3f3;
+  padding: 20px 16px;
+  text-align: center;
+  margin-bottom: auto;
+}
+
+.embarque-zona p {
+  color: #666;
+  font-size: 15px;
+  margin-bottom: 14px;
+}
+
+.embarque-zona a {
+  color: #3b5bff;
+  text-decoration: underline;
+  font-size: 16px;
+  line-height: 1.5;
+}

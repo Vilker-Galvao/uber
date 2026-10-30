@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Uber - Paradas</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="paradas.css">
+</head>
+<body>
+  <div class="app app-paradas">
+
+    <header class="paradas-topo">
+      <a href="destino.html" class="voltar-simples" aria-label="Voltar">←</a>
+
+      <div class="paradas-rota">
+        <div class="trajeto-v">
+          <span class="tr-ponto"></span>
+          <span class="tr-linha"></span>
+          <span class="tr-numero">1</span>
+          <span class="tr-linha"></span>
+          <span class="tr-mais">+</span>
+        </div>
+
+        <div class="paradas-campos">
+          <div class="campo">
+            <input type="text" value="No 36 Hihienópolis">
+            <span class="arrastar">═</span>
+          </div>
+          <div class="campo">
+            <input type="text" placeholder="Adicionar parada">
+            <span class="arrastar">═</span>
+          </div>
+          <div class="campo">
+            <input type="text" placeholder="Adicionar parada">
+            <span class="arrastar">═</span>
+          </div>
+        </div>
+
+        <button class="fechar" aria-label="Remover parada">✕</button>
+      </div>
+
+      <p class="paradas-aviso">Agora você pode adicionar várias paradas</p>
+    </header>
+
+    <!-- MAPA -->
+    <section class="mapa-grande">
+      <span class="mapa-cidade">São Paulo</span>
+      <span class="mapa-carro">🚘</span>
+      <span class="mapa-ponto"></span>
+    </section>
+
+  </div>
+</body>
+</html>

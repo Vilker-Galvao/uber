@@ -1,0 +1,141 @@
+/* Tela 04 - Paradas (usa a base do style.css) */
+
+.voltar-simples {
+  display: inline-block;
+  font-size: 30px;
+  line-height: 1;
+}
+
+.app-paradas {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 0;
+}
+
+.paradas-topo {
+  padding: 24px 16px 16px;
+  background: #fff;
+}
+
+.paradas-rota {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 12px 0 18px;
+}
+
+.trajeto-v {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  width: 20px;
+}
+
+.tr-ponto {
+  width: 8px;
+  height: 8px;
+  background: #aaa;
+  border-radius: 50%;
+}
+
+.tr-linha {
+  width: 1px;
+  height: 14px;
+  background: #aaa;
+}
+
+.tr-numero {
+  background: #000;
+  color: #fff;
+  font-size: 11px;
+  font-weight: bold;
+  width: 16px;
+  height: 16px;
+  text-align: center;
+  line-height: 16px;
+}
+
+.tr-mais {
+  color: #888;
+  font-size: 16px;
+  line-height: 1;
+}
+
+.paradas-campos {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.campo {
+  display: flex;
+  align-items: center;
+  background: #f1f1f1;
+  padding-right: 10px;
+}
+
+.campo input {
+  flex: 1;
+  border: none;
+  background: transparent;
+  padding: 14px 10px;
+  font-size: 14px;
+  outline: none;
+  min-width: 0;
+}
+
+.arrastar {
+  color: #7b6bb5;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.fechar {
+  background: none;
+  border: none;
+  font-size: 20px;
+  width: 30px;
+  cursor: pointer;
+}
+
+.paradas-aviso {
+  font-size: 13px;
+  color: #444;
+}
+
+.mapa-grande {
+  position: relative;
+  flex: 1;
+  min-height: 460px;
+  background-image: url(imagens/mapa.png);
+  overflow: hidden;
+}
+
+.mapa-cidade {
+  position: absolute;
+  left: 50%;
+  top: 62%;
+  transform: translateX(-50%);
+  color: #c4162a;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.mapa-carro {
+  position: absolute;
+  left: 35%;
+  top: 48%;
+  font-size: 30px;
+}
+
+.mapa-ponto {
+  position: absolute;
+  left: 50%;
+  top: 46%;
+  width: 14px;
+  height: 14px;
+  background: #3b5bff;
+  border-radius: 50%;
+}
