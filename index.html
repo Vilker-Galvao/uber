@@ -1,118 +1,119 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Uber</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Uber</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="app">
-        <header class="topo">
-            <nav class="abas">
-                <a href="index.html" class="aba aba-ativa"><span class="aba-icone">🚗</span>Corridas</a>
-                <a href="#" class="aba"><span class="aba-icone">🥗</span>Delivery</a>
-            </nav>
+  <div class="app">
 
-            <!-- Barra de busca -->
-             <a href="destino.html" class="busca">
-                <span class="busca-lupa">🔍</span>
-                <span class="busca-texto">Para onde?</span>
-                <span class="busca-agora">🕒 agora <span class="seta-baixo"></span></span>
-             </a>
-        </header>
+    <!-- TOPO: abas Corridas / Delivery -->
+    <header class="topo">
+      <nav class="abas">
+        <a href="index.html" class="aba aba-ativa"><span class="aba-icone">🚗</span>Corridas</a>
+        <a href="#" class="aba"><span class="aba-icone">🥗</span>Delivery</a>
+      </nav>
 
-        <!-- LUGARES RECENTES -->
-         <section class="recentes">
-            <a href="#" class="lugar">
-                <span class="lugar-icone">📍</span>
-                <span class="lugar-info">
-                    <strong>Casa</strong>
-                    <small>Rua Santa Maria, 1364, Centro, São Paulo</small>
-                </span>
-                <span class="lugar-seta">›</span>
-            </a>
-            <a href="#" class="lugar">
-                <span class="lugar-icone">📍</span>
-                <span class="lugar-info">
-                    <strong>Trabalho</strong>
-                    <small>Rua Dom Pedro II, 921, Zona Leste, São Paulo</small>
-                </span>
-                <span class="lugar-seta">›</span>
-            </a>
-         </section>
+      <!-- Barra de busca: "Para onde?" vai ao destino, "agora" vai ao agendamento -->
+      <div class="busca">
+        <span class="busca-lupa">🔍</span>
+        <a href="destino.html" class="busca-texto">Para onde?</a>
+        <a href="agendar.html" class="busca-agora">🕒 agora <span class="seta-baixo">⌄</span></a>
+      </div>
+    </header>
 
-         <!-- SUGESTÕES -->
-          <section class="secao">
-            <div class="secao-titulo">
-                <h2>Sugestões</h2>
-                <a href="#">Ver tudo</a>
-            </div>
-            <div class="sugestoes">
-                <a href="corrida.html" class="sugestao">
-                    <span class="sugestao-icone">🚘</span>
-                    <span>Corrida</span>
-                </a>
-                <a href="#" class="sugestao">
-                    <span class="sugestao-icone">📦</span>
-                    <span>Pacote</span>
-                </a>
-                <a href="#" class="sugestao">
-                    <span class="sugestao-icone">⏱️</span>
-                    <span>Por hora</span>
-                </a>
-            </div>
-          </section>
+    <!-- LUGARES RECENTES -->
+    <section class="recentes">
+      <a href="#" class="lugar">
+        <span class="lugar-icone">📍</span>
+        <span class="lugar-info">
+          <strong>Casa</strong>
+          <small>Rua Santa Maria, 1364, Centro, São Paulo</small>
+        </span>
+        <span class="lugar-seta">›</span>
+      </a>
+      <a href="#" class="lugar">
+        <span class="lugar-icone">📍</span>
+        <span class="lugar-info">
+          <strong>Trabalho</strong>
+          <small>Rua Dom Pedro II, 921, Zona Leste, São Paulo</small>
+        </span>
+        <span class="lugar-seta">›</span>
+      </a>
+    </section>
 
-          <!-- FORMAS DE ECONOMIZAR (1) -->
-           <section class="secao">
-            <h2>Formas de economizar com a Uber</h2>
-            <div class="carrossel">
-                <article class="card-economia">
-                    <div class="card-img img-1"></div>
-                    <h3>Compartilhe sua viagem</h3>
-                    <p>Divida a carona, divida os custos</p>
-                </article>
-                <article class="card-economia">
-                    <div class="card-img img-2"></div>
-                    <h3>Adicione uma parada ou</h3>
-                    <p>Busque amigos também</p>
-                </article>
-            </div>
-           </section>
+    <!-- SUGESTÕES -->
+    <section class="secao">
+      <div class="secao-titulo">
+        <h2>Sugestões</h2>
+        <a href="#">Ver tudo</a>
+      </div>
+      <div class="sugestoes">
+        <a href="corrida.html" class="sugestao">
+          <span class="sugestao-icone">🚘</span>
+          <span>Corrida</span>
+        </a>
+        <a href="#" class="sugestao">
+          <span class="sugestao-icone">📦</span>
+          <span>Pacote</span>
+        </a>
+        <a href="#" class="sugestao">
+          <span class="sugestao-icone">⏱️</span>
+          <span>Por hora</span>
+        </a>
+      </div>
+    </section>
 
-           <!-- BANNER AZUL -->
-           <section class="banner-wrap">
-            <div class="banner">
-                <h3>Um motorista, várias paradas</h3>
-                <a href="#">Experimente o Uber agora <span>→</span></a>
-                <div class="banner-aviao">✈️</div>
-            </div>
-            <div class="pontos">
-                <span class="ponto ponto-ativo"></span>
-                <span class="ponto"></span>
-                <span class="ponto"></span>
-            </div>
-           </section>
+    <!-- FORMAS DE ECONOMIZAR (1) -->
+    <section class="secao">
+      <h2>Formas de economizar com a Uber</h2>
+      <div class="carrossel">
+        <article class="card-economia">
+          <div class="card-img img-1"></div>
+          <h3>Compartilhe sua viagem</h3>
+          <p>Divida a carona, divida os custos</p>
+        </article>
+        <article class="card-economia">
+          <div class="card-img img-2"></div>
+          <h3>Adicione uma parada ou</h3>
+          <p>Busque amigos também</p>
+        </article>
+      </div>
+    </section>
 
-           <!-- FORMAS DE ECONOMIZAR (2) -->
-            <section class="secao">
-                <h2>Formas de economizar com a Uber</h2>
-                <div class="carrossel">
-                    <div class="card-img img-3"></div>
-                    <div class="card-img img-4"></div>
-                </div>
-            </section>
+    <!-- BANNER AZUL -->
+    <section class="banner-wrap">
+      <div class="banner">
+        <h3>Um motorista, várias paradas</h3>
+        <a href="paradas.html">Experimente o Uber agora <span>→</span></a>
+        <div class="banner-aviao">✈️</div>
+      </div>
+      <div class="pontos">
+        <span class="ponto ponto-ativo"></span>
+        <span class="ponto"></span>
+        <span class="ponto"></span>
+      </div>
+    </section>
 
-            <!-- MENU DE BAIXO -->
-             <nav class="menu-baixo">
-                <a href="index.html" class="menu-item menu-ativo"><span>🏠</span>Início</a>
-                <a href="#" class="menu-item"><span>⠿</span>Serviços</a>
-                <a href="viagens.html" class="menu-item"><span>🧾</span>Atividade</a>
-                <a href="#" class="menu-item"><span>👤</span>Conta</a>
-             </nav>
-             
-    </div>
-    
+    <!-- FORMAS DE ECONOMIZAR (2) -->
+    <section class="secao">
+      <h2>Formas de economizar com a Uber</h2>
+      <div class="carrossel">
+        <div class="card-img img-3"></div>
+        <div class="card-img img-4"></div>
+      </div>
+    </section>
+
+    <!-- MENU DE BAIXO -->
+    <nav class="menu-baixo">
+      <a href="index.html" class="menu-item menu-ativo"><span>🏠</span>Início</a>
+      <a href="#" class="menu-item"><span>⠿</span>Serviços</a>
+      <a href="viagens.html" class="menu-item"><span>🧾</span>Atividade</a>
+      <a href="#" class="menu-item"><span>👤</span>Conta</a>
+    </nav>
+
+  </div>
 </body>
 </html>
